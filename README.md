@@ -28,11 +28,11 @@ This project allows the creation of a custom token on the Ethereum blockchain, w
 3. **Interact with the Contract:**
    - **Minting Tokens:**
      - Call the `mint` function with an address and the number of tokens to mint.
-     - For example: mint 1000 tokens to `0x123...`.
+     - For example: mint 1000 tokens to `0x5B38Da6a701c568545dCfcB03FcB875f56beddC4`.
      - Verify that the `totalSupply` increases and the address balance updates accordingly.
    - **Burning Tokens:**
      - Call the `burn` function with the same address and the number of tokens to burn.
-     - For example: burn 750 tokens from `0x123...`.
+     - For example: burn 750 tokens from `0x5B38Da6a701c568545dCfcB03FcB875f56beddC4`.
      - The `totalSupply` decreases, and the address balance reflects the reduced token amount.
 
    Here’s a sample interaction:
@@ -40,15 +40,6 @@ This project allows the creation of a custom token on the Ethereum blockchain, w
    mint(address, 1000) // Mint 1000 tokens
    burn(address, 750)  // Burn 750 tokens
    ```
-
-### Example Commands
-```solidity
-// Mint 1000 tokens to an address
-mint(0xYourAddress, 1000);
-
-// Burn 750 tokens from the same address
-burn(0xYourAddress, 750);
-```
 
 ## Help
 
@@ -62,8 +53,5 @@ require(balances[_from] >= _amount, "Insufficient balance to burn");
 ## Author
 
 Jasmine Camasura
+
 FEU Institute of Technology
-
-## License
-
-This project is licensed under the MIT License.
